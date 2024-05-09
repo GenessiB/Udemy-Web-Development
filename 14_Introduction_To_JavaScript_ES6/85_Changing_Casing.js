@@ -14,6 +14,7 @@ var firstChar = yourName.slice(0,1);
 var upperCaseFirstChar = firstChar.toUpperCase();
 // c isolate the rest of the name
 var restOfName = yourName.slice(1,yourName.length);
+restOfName = restOfName.toLocaleLowerCase();
 // d concatenate the first character with the rest of the characters
 yourName = `${upperCaseFirstChar}${restOfName}`;
 // or
